@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book Form</title>
+    <link rel="stylesheet" href="AddressBookStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="AddressBookForm.js"></script>
+    <script src="AddressBookHomePage.js"></script>
+
+</head>
+<body>
+        <!-- UC 1-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="Images\phnbookimage.png" alt="logo">
+            <div>
+                <span class="address-text">ADDRESS</span><br>
+                <span class="address-text address-book" style="color: #42515f;">BOOK</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- UC 2-->
+    <div class="form-content">
+        <a href="AddressBookHomePage.html">
+        <form class="form" id="myForm" action="AddressBookHomePage.html" onreset="resetForm()" onsubmit="save() "></a>
+            <div class="form-head">
+                <div class="form-head-text">Person Address Form</div>
+                <a href="AddressBookHomePage.html"> <img class="form-head-image"  src="Images\cancelimage.png" alt="logo"></a>  <!-- UC 9-->
+            </div>
+            <br>
+            <!-- UC 3-->
+            <div class="row-content">
+                <fieldset style="color: #68c0f7;border-color: #88e6e6f5;padding: 0%;">
+                <legend for="name" class="legend text" style="color: #53b0e9;"> Full Name </legend>
+                <input style="border-color: #f7f9facc;" type="text" name="name" id="name" class="input" placeholder="" required>
+                <error-output class="name-error"></error-output>
+            </fieldset>
+            </div>
+            <br>
+            <div class = "row-content">
+                <input type="text" name="Address" class="input" id="address" placeholder="Address" style="height: 80px;" required>
+                <error-output class="address-error"></error-output>
+            </div>
+            <br>
+            <div class="row-content">
+                <div class="column-data">
+                    <div class="column-content">
+                    <select name="city" id="city" required>
+                        <option value="Select City" selected>SelectCity</option>
+                        <option value="1">Hyderabad</option>
+                        <option value="2">Secundrabad</option>
+                        <option value="3">Kurnool</option>
+                        <option value="4">Vijayawada</option>
+                        <option value="5">Banglore</option>
+                        <option value="6">Madurai</option>
+                        <option value="7">Chennai/option>
+                        <option value="8">Medhak</option>
+                        <option value="9">Sangareddy</option>
+                        <option value="10">Kochi</option>
+                    </select>
+
+                    </div><br>
+                    <div class="column-content">
+                    <select name="state" id="state">
+                        <option value="SelectState">SelectSate</option>
+                            <option value="TS">Telangana</option>
+                            <option value="TN">TamilNadu</option>
+                            <option value="AP">AndhraPradesh</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Karnataka">Karnataka</option>
+                    </select>
+
+                    </div><br>
+                    <div class="column-content">
+                    <input type="text" class="input pincode" id="pin" name="pin" placeholder="Zip Code" required>
+                    <error-output class="pin-error"></error-output>
+                    </div>
+                </div>
+            </div>
+            <br>
+          <div class="row-content">
+                <input type="text" name="phone" id="phone" class="input" placeholder="Phone Number" required>
+                <error-output class="phone-error"></error-output>
+            </div>
+            <br>
+            <div class="buttons">
+                <div class="add-reset">
+                    <button type="submit" class="button addButton" id="submitButton">Add</button>
+                    <button type = "reset" class = "button resetButton">Reset</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

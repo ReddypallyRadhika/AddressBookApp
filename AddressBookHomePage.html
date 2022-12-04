@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AddressBookHomePageStyle.css">
+    <script src="AddressBook.js"></script>
+    <script src="AddressBookHomePage.js"></script>
+    <title>Address Book App</title>
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+        <img src="Images\phnbookimage.png" alt="logo">
+        <div>
+    <span class="address-text">ADDRESS</span><br>
+            <span class="address-text address-book" style="color: #42515f;">BOOK</span>
+        </div>
+        </div>
+    </header>
+
+        <!-- UC2 -->
+    <div class="main-content" style="background-color: #f7f7f7;">
+        <div class="header-content person-header">
+        <div class="person-detail-text"> Persons Details
+            <div class="person-count"></div>
+        </div>
+            <a href="AddressBookForm.html" class="add-button">
+            <img src="" alt=""><b>+</b> Add Person</a>
+        </div>
+    </div>
+
+    <!-- UC3 –-->
+    <div class="table-main">
+        <table id="table-display" class="table">
+            <tr>
+                <th>Fullname</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>ZipCode</th>
+                <th>PhoneNumber</th>
+            </tr>
+
+            <tr>
+                <td>Radhika</td>
+            <td>SCB Nagar </td>
+            <td> Hyderabad </td>
+            <td> Telangana </td>
+            <td> 500055 </td>
+            <td> 91 9998889988 </td>
+                <td>
+                    <img onclick="remove(this)" alt="delete"src="Images\deleteimage.png">
+                    <img onclick="update(this)" alt="edit" src="Images\editimage.png"  >
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ramakanth </td>
+            <td> Sriram Nagar </td>
+            <td> Secundrabad </td>
+            <td> Telangana </td>
+            <td> 500054 </td>
+            <td> 99 8822882233 </td>
+                <td>
+                <img onclick="remove(this)" alt="delete"src="Images\deleteimage.png">
+                <img onclick="update(this)" alt="edit" src="Images\editimage.png"  >
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
